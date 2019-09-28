@@ -4,7 +4,7 @@ RSpec.describe 'Task api' do
   before { host! 'api.taskmanager.dev'}
 
   let!(:user) {create(:user)}
-
+ 
   let!(:headers) do 
     {
       'Accept' => 'application/vnd.taskmanager.v1',

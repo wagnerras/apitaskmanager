@@ -12,7 +12,6 @@ RSpec.describe 'Task api' do
             'access-token' => auth_data['access-token'],
             'uid' => auth_data['uid'],
             'client' => auth_data['client']
-
         }
   end
 

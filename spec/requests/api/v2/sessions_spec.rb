@@ -2,17 +2,21 @@ require 'rails_helper'
 
 RSpec.describe 'Sessions Api', type: :request do
     before {host! 'api.taskmanager.test'}
-    let(:user) {create(:user)}
+    let!(:user) {create(:user)}
+    let!(:auth_data) { user.create_new_auth_token }
     let(:headers) do 
-       {
-        'Accept' => 'application/vnd.taskmanager.v2',
-        'Content-Type' => Mime[:json].to_s
-       }
+        {
+            'Accept' => 'application/vnd.taskmanager.v2',
+            'Content-type' => Mime[:json].to_s,
+            'access-token' => auth_data['access-token'],
+            'uid' => auth_data['uid'],
+            'client' => auth_data['client']
+        }
     end
 
-    describe 'POST /sessions' do
+    describe 'POST /auth/sign_in' do
         before do
-        	post '/sessions', params: {session: credentials}.to_json, headers: headers
+        	post '/auth/sign_in', params: credentials.to_json, headers: headers
 				end
 				
 			 context 'when credentials are correct' do
@@ -22,9 +26,10 @@ RSpec.describe 'Sessions Api', type: :request do
 					 expect(response).to have_http_status(200)
 				 end
 
-                 it 'returns json data for user auth token' do
-                     user.reload
-					 expect(json_body[:data][:attributes][:'auth-token']).to eq(user.auth_token)
+                 it 'returns authenticate datas in headers' do
+                     expect(response.headers).to have_key('access-token')
+                     expect(response.headers).to have_key('uid')
+                     expect(response.headers).to have_key('client')
 				 end
              end
              
@@ -42,19 +47,22 @@ RSpec.describe 'Sessions Api', type: :request do
             end
     end
 
-    describe 'DELETE /sessions/:id' do
+    describe 'DELETE /auth/sign_out' do
         let(:auth_token) { user.auth_token }
 
         before do
-            delete "/sessions/#{auth_token}", params: {}, headers: headers
+            delete '/auth/sign_out', params: {}, headers: headers
         end
 
-        it 'returns status code 204' do
-            expect(response).to have_http_status(204)
+        it 'returns status code 200' do
+            expect(response).to have_http_status(200)
         end
 
         it 'changes user auth_token' do
-            expect(User.find_by(auth_token: auth_token)).to be_nil
+            user.reload
+        
+            expect(user.valid_token?(auth_data['access-token'], auth_data['client'])).to eq(false)  
+            #expect(user).not_to be_valid_token(auth_data['access-token'], auth_data['client']) << ou esse
         end
     end
 

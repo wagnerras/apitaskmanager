@@ -1,0 +1,125 @@
+[33mcommit e212788a1e6b1bd748bccadf7a4f22dec2c9b50b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 28 19:14:09 2019 -0300
+
+    ajustando api de sessoes
+
+[33mcommit 5e260ecb935c4aebdecac8075ef5db83754bfc60[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 28 18:37:39 2019 -0300
+
+    update tasks api
+
+[33mcommit abecb9337466e3c77e47b1a2459cf2c15895bc58[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 28 13:28:45 2019 -0300
+
+    atualizando api
+
+[33mcommit 2a29a272fc22b184b5e80831473d1da72820de16[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 28 12:20:50 2019 -0300
+
+    instalando e configurando cors
+
+[33mcommit 2ff5c4e3b33e01378f64264fae7e8bf0afbbbc64[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 28 10:57:36 2019 -0300
+
+    ajustando os controllers
+
+[33mcommit 2992debbdbc65c13a512e88d0e31ff0ac2caed2b[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 28 10:26:40 2019 -0300
+
+    instalando devise_token_auth
+
+[33mcommit 971500d9e735c10f4e712a4c8144383d8bf174ed[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 28 09:08:33 2019 -0300
+
+    finalizando teste com ransack
+
+[33mcommit f24fbae3e319fc1e2150592dfa990d6d14df748d[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Wed Sep 25 22:14:06 2019 -0300
+
+    adicionando ransack para testes
+
+[33mcommit efdf96327f326d655ba64fc855a9c9b045a3381c[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Mon Sep 23 18:58:32 2019 -0300
+
+    implementando jsonapi.org patterns para sesseions
+
+[33mcommit 6f3da6917881afe9e2db90471605207462d279eb[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Mon Sep 23 18:50:33 2019 -0300
+
+    implementando jsonapiorg para usuarios
+
+[33mcommit 6d6683a58fbae8bcd9c8057b3d4274a3c5b44cdd[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Mon Sep 23 18:00:14 2019 -0300
+
+    implementando jsonapi.org patterns
+
+[33mcommit ef3381351d30d3c1ec793ab775410156792db8d5[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sun Sep 22 18:55:48 2019 -0300
+
+    adicionando serializer
+
+[33mcommit c39be90b511b33cea0204fda5a1475606da07d38[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sun Sep 22 18:19:23 2019 -0300
+
+    adicionando api v2
+
+[33mcommit 01f68a5e1b33cc81aff81be81b64bc6b96b88e6c[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Sep 21 09:40:17 2019 -0300
+
+    implementando destroy
+
+[33mcommit ea20137a531f6707b27fc678a3cdbc62fdba9694[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Wed Sep 18 13:36:27 2019 -0300
+
+    adicionando update task
+
+[33mcommit 8bc3d98e02b119cc61dbc95a0f698463d9f55a52[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Wed Sep 18 12:49:31 2019 -0300
+
+    adicionando action create
+
+[33mcommit dc1005f979f99c30b2473988854e7bdc3e6e9c6d[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Wed Sep 18 10:03:49 2019 -0300
+
+    adding tasks controller
+
+[33mcommit 49af57073b585b74377a928b4678856dbacdb24a[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Aug 24 22:08:05 2019 -0300
+
+    adicionando destruir dependentes no model user
+
+[33mcommit f6160e2e6da3af5cc09e86961d0b5f7bcd2ec8ee[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sat Aug 24 21:56:48 2019 -0300
+
+    adicionando model task
+
+[33mcommit 6d20f519f5173288d11773e4e6b2c8309991c73b[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Thu Aug 22 20:59:34 2019 -0300
+
+    atualizando  git
+
+[33mcommit be8662fb787fc3112e1cf384861bd5a0bf3df80d[m
+Author: Wagner Ribeiro <wagnerras@gmail.com>
+Date:   Sun Aug 4 10:43:19 2019 -0300
+
+    first commit

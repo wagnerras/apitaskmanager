@@ -19,6 +19,7 @@ class Api::V1::SessionsController < Api::V1::BaseController
 		head 204
 	end
 
+
 	private
 
 	def session_params
